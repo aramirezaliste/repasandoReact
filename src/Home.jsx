@@ -12,9 +12,10 @@ const handleClick = () => {
     return (
         <div className="home">
             <h2>{name} is {age} years old</h2>
-            <p></p>
+            <p>Hello</p>
             <button onClick={handleClick}>Click me</button>
-        </div>    
+
+        </div>
     );
 }
  
