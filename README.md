@@ -17,3 +17,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Levantar un servidor json
 npx json-server --watch data/db.json --port 8000
+
+## Instalar react router
+npm i react-router
