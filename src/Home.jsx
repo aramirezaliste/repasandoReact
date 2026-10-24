@@ -1,25 +1,15 @@
-import { useState, useEffect } from "react"
 import BlogList from "./BlogList";
+import useFetch from "./useFetch";
 
 const Home = () => {
-    const [blogs, setBlogs] = useState(null)
+    const{data: blogs, isPending, error} = useFetch("http://localhost:8000/blogs")
 
-    {/*.json() pasa el json a javascrip object  */ }
-    useEffect(() => {
-        fetch('http://localhost:8000/blogs')
-            .then(res => {
-                return res.json()
-            })
-            .then(data => {
-                setBlogs(data)
-            })
-    }, [])
-
+    {/*&& esta condicional espera que los dos valores sean true
+        si blogs no es true, no se renderiza BlogList */}
     return (
         <div className="home">
-            {/*&& el comparador logico evalua a la izquierda primero
-             y si es false no evalua el de la derecha y no lo renderiza 
-             hasta que sea true */ }
+            {error && <div>{error}</div>}
+            {isPending && <div>Loading...</div>}
             {blogs && <BlogList blogs={blogs} title="Todos los Blogs" />}
         </div>
     );
