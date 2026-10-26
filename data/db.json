@@ -1,50 +1,44 @@
-
 {
   "blogs": [
     {
-      "id": 1,
-      "title": "Understanding JavaScript Closures",
-      "body": "Learn how closures work in JavaScript and how they allow functions to remember variables from their outer scope.",
-      "author": "Jane Doe",
-      "date": "2024-06-01",
-      "category": "JavaScript",
-      "tags": ["JavaScript", "Closures", "Functions"]
-    },
-    {
-      "id": 2,
-      "title": "Understanding Python Closures",
-      "body": "Explore Python closures and discover how nested functions can access variables from their enclosing scope.",
-      "author": "Jane Doe",
-      "date": "2024-06-02",
-      "category": "Python",
-      "tags": ["Python", "Closures", "Functions"]
-    },
-    {
-      "id": 3,
+      "id": "3",
       "title": "Getting Started with React",
       "body": "Discover the fundamentals of React, including components, JSX, props, and how to build reusable user interfaces.",
       "author": "John Smith",
       "date": "2024-06-03",
       "category": "React",
-      "tags": ["React", "Components", "Frontend"]
+      "tags": [
+        "React",
+        "Components",
+        "Frontend"
+      ]
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Mastering JavaScript Array Methods",
       "body": "Learn how to use map, filter, find, and reduce to manipulate arrays and write cleaner JavaScript code.",
       "author": "Emily Johnson",
       "date": "2024-06-04",
       "category": "JavaScript",
-      "tags": ["JavaScript", "Arrays", "Methods"]
+      "tags": [
+        "JavaScript",
+        "Arrays",
+        "Methods"
+      ]
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Working with APIs in React",
       "body": "Understand how to fetch data from an API, manage responses, and display dynamic information in React components.",
       "author": "Michael Brown",
       "date": "2024-06-05",
       "category": "React",
-      "tags": ["React", "API", "Fetch"]
+      "tags": [
+        "React",
+        "API",
+        "Fetch"
+      ]
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
